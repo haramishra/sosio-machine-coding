@@ -1,0 +1,147 @@
+/* Puslse button animeation */
+
+body {
+  text-align: center;
+}
+
+.title {
+  margin: 2rem;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 3rme;
+}
+
+@keyframes shadow-pulse {
+  0% {
+    box-shadow: 0 0 0 0px rgba(37, 193, 111, 0.7);
+  }
+  100% {
+    box-shadow: 0 0 0 20px rgba(37, 193, 111, 0);
+  }
+}
+
+.action-button {
+  list-style-type: none;
+  border: .8px solid rgba(37, 193, 111, 0.7);
+  padding: 1.5rem 3.5rem 1.5rem 3.5rem ;
+  margin: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.action-button:hover {
+  background-color: rgba(37, 193, 111, 0.1);
+  border: .8  px solid rgba(37, 193, 111, 1);
+
+}
+
+.tooltip {
+  position: relative;
+  margin: 40px;
+  display: inline-block;
+
+  width: 30px;
+  height: 30px;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  background: rgba(37, 193, 111);
+  line-height: 1.8rem;
+  border-radius: 50%;
+  animation: shadow-pulse 1.2s infinite;
+}
+.section-wraper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.image {
+  width: 600px;
+  height: 380px;
+  background-size: cover;
+  align-self: center;
+
+}
+.image.active{
+  display: none;
+}
+
+.image-container {
+  width: 620px;
+  height: 440px;
+  border-radius: 5px;
+  display: flex;
+ flex-direction: column;
+  justify-content: center;
+  
+  background-color: rgb(231, 231, 231);
+}
+.dots {
+  margin: .5rem;
+}
+.dot{
+  height: 8px;
+  width: 8px;
+  display: block;
+  margin: 2px;
+  position: relative;
+  float: left;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.dot-red {
+  background-color: #fc635d;
+}
+
+.dot-yellow {
+  background-color: #fdbc40;
+}
+
+.dot-green{
+  background-color: #34c84a;
+}
+
+.image-container,
+.button-container {
+  margin: 1rem;
+}
+
+.tooltip-1 {
+  top: -360px;
+  right: 190px;
+}
+.tooltip-2 {
+  top: -100px;
+}
+.tooltip-3 {
+  top: -370px;
+  left: 240px;
+}
+.tooltip-4 {
+  top: -150px;
+}
+.tooltip-5 {
+  top: -380px;
+  right: 80px;
+}
+.tooltip-6 {
+  top: -260px;
+  left: 80px;
+}
+.tooltip-7 {
+  top: -250px;
+  left: 200px;
+}
+.tooltip-8 {
+  top: -100px;
+  left: 70px;
+}
+.tooltip-9 {
+  top: -360px;
+}
+.tooltip-10 {
+  top: -160px;
+  left: 120px;
+}
