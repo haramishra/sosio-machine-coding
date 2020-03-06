@@ -235,6 +235,8 @@ h1 {
     width: 100%;
     margin-bottom: rem;
     max-width: 90vw;
+    height: auto;
+    max-height: 50rem;
   }
   .hide {
     display: block;
