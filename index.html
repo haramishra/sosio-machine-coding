@@ -3,8 +3,12 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
     <title>Support</title>
+    <!-- tippy and popper library cdn -->
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css" />
     <link rel="stylesheet" href="main.css">
 </head>
 
@@ -12,26 +16,23 @@
     <section>
         <h1 class='title'>Support, now simplified</h1>
         <div class="section-wraper">
-            <div class="Button-container">
-                <!-- <button class = "">Conversations made easier</button>
-            <button class = "">Collaborations made stronger</button>
-            <button class = "">Support made more automatic</button>
-            <button class = "">Answers made available faster</button>
-            <button class = "">Insights made more accessible</button> -->
+            <div class="button-container">
                 <ul>
-                    <li class="action-button">Conversations made easier</li>
-                </ul>
-                <ul>
-                    <li class="action-button">Collaborations made stronger</li>
-                </ul>
-                <ul>
-                    <li class="action-button">Support made more automatic</li>
-                </ul>
-                <ul>
-                    <li class="action-button">nswers made available faster</li>
-                </ul>
-                <ul>
-                    <li class="action-button">Insights made more accessible</li>
+                    <li class="action-button button-hover">
+                        Conversations made easier
+                    </li>
+                    <li class="action-button button-hover">
+                        Collaborations made stronger
+                    </li>
+                    <li class="action-button button-hover">
+                        Support made more automatic
+                    </li>
+                    <li class="action-button button-hover">
+                        Answers made available faster
+                    </li>
+                    <li class="action-button button-hover">
+                        Insights made more accessible
+                    </li>
                 </ul>
             </div>
             <div class="image-container">
@@ -40,34 +41,130 @@
                     <div class="dot dot-yellow"></div>
                     <div class="dot dot-green"></div>
                 </div>
-                <div class="image active">
-                    <img src="assets/images/img1.png" alt="" class="image">
-                    <div class="tooltip-1 tooltip">1</div>
-                    <div class="tooltip-2 tooltip">2</div>
-                </div>
-                <div class="image active">
-                    <img src="assets/images/img2.png" alt="" class="image">
-                    <div class="tooltip-3 tooltip">1</div>
-                    <div class="tooltip-4 tooltip">2</div>
-                </div>
-                <div class="image active">
-                    <img src="assets/images/img3.png" alt="" class="image">
-                    <div class="tooltip-5 tooltip">1</div>
-                    <div class="tooltip-6 tooltip">2</div>
-                </div>
-                <div class="image active">
-                    <img src="assets/images/img4.png" alt="" class="image">
-                    <div class="tooltip-7 tooltip">1</div>
-                    <div class="tooltip-8  tooltip">2</div>
-                </div>
-                <div class="image">
-                    <img src="assets/images/img5.png" alt="" class="image">
-                    <div class="tooltip-9 tooltip">1</div>
-                    <div class="tooltip-10 tooltip">2</div>
+                <div class="images">
+
+                    <div class="image hide" id='image-1'>
+                        <div class="sm-headings hide">
+                            <h3>Conversations made easier</h3>
+                            <p>Streamline your support channels - Email, Phone, Chat and more - so you can respond to
+                                all your customers from just one place
+                            </p>
+                        </div>
+                        <img src="assets/images/img1.png" alt="">
+                        <div class="tooltip-1 tooltip">1</div>
+                        <div class='popover' id='popover-1'>
+                            <strong>Unify support channels</strong>
+                            <br />
+                            <p>Streamline your support channels - Email, Phone, Chat and more - so you can respond to
+                                all your customers from just one place</p>
+                        </div>
+                        <div class="tooltip-2 tooltip">2</div>
+                        <div class='popover' id='popover-2'>
+                            <strong>Unify support channels</strong>
+                            <br />
+                            <p>Streamline your support channels - Email, Phone, Chat and more - so you can respond to
+                                all your customers from just one place</p>
+                        </div>
+
+                    </div>
+                    <div class="image hide" id='image-2'>
+                        <div class="sm-headings hide">
+                            <h3>Conversations made easier</h3>
+                            <p>Streamline your support channels - Email, Phone, Chat and more - so you can respond to
+                                all your customers from just one place
+                            </p>
+                        </div>
+                        <img src="assets/images/img2.png" alt="">
+                        <div class="tooltip-3 tooltip">1</div>
+                        <div class='popover' id='popover-3'>
+                            <strong>Unify support channels</strong>
+                            <br />
+                            <p>Streamline your support channels - Email, Phone, Chat and more - so you can respond to
+                                all your customers from just one place</p>
+                        </div>
+                        <div class="tooltip-4 tooltip">2</div>
+                        <div class='popover' id='popover-4'>
+                            <strong>Unify support channels</strong>
+                            <br />
+                            <p>Streamline your support channels - Email, Phone, Chat and more - so you can respond to
+                                all your customers from just one place</p>
+                        </div>
+                    </div>
+                    <div class="image hide" id='image-3'>
+                        <div class="sm-headings hide">
+                            <h3>Conversations made easier</h3>
+                            <p>Streamline your support channels - Email, Phone, Chat and more - so you can respond to
+                                all your customers from just one place
+                            </p>
+                        </div>
+                        <img src="assets/images/img3.png" alt="">
+                        <div class="tooltip-5 tooltip">1</div>
+                        <div class='popover' id='popover-5'>
+                            <strong>Unify support channels</strong>
+                            <br />
+                            <p>Streamline your support channels - Email, Phone, Chat and more - so you can respond to
+                                all your customers from just one place</p>
+                        </div>
+                        <div class="tooltip-6 tooltip">2</div>
+                        <div class='popover' id='popover-6'>
+                            <strong>Unify support channels</strong>
+                            <br />
+                            <p>Streamline your support channels - Email, Phone, Chat and more - so you can respond to
+                                all your customers from just one place</p>
+                        </div>
+                    </div>
+                    <div class="image hide" id='image-4'>
+                        <div class="sm-headings hide">
+                            <h3>Conversations made easier</h3>
+                            <p>Streamline your support channels - Email, Phone, Chat and more - so you can respond to
+                                all your customers from just one place
+                            </p>
+                        </div>
+                        <img src="assets/images/img4.png" alt="">
+                        <div class="tooltip-7 tooltip">1</div>
+                        <div class='popover' id='popover-7'>
+                            <strong>Unify support channels</strong>
+                            <br />
+                            <p>Streamline your support channels - Email, Phone, Chat and more - so you can respond to
+                                all your customers from just one place</p>
+                        </div>
+                        <div class="tooltip-8  tooltip">2</div>
+                        <div class='popover' id='popover-8'>
+                            <strong>Unify support channels</strong>
+                            <br />
+                            <p>Streamline your support channels - Email, Phone, Chat and more - so you can respond to
+                                all your customers from just one place</p>
+                        </div>
+                    </div>
+                    <div class="image hide" id='image-5'>
+                        <div class="sm-headings hide">
+                            <h3>Conversations made easier</h3>
+                            <p>Streamline your support channels - Email, Phone, Chat and more - so you can respond to
+                                all your customers from just one place
+                            </p>
+                        </div>
+                        <img src="assets/images/img5.png" alt="">
+                        <div class="tooltip-9 tooltip">1</div>
+                        <div class='popover' id='popover-9'>
+                            <strong>Unify support channels</strong>
+                            <br />
+                            <p>Streamline your support channels - Email, Phone, Chat and more - so you can respond to
+                                all your customers from just one place</p>
+                        </div>
+                        <div class="tooltip-10 tooltip">2</div>
+                        <div class='popover' id='popover-10'>
+                            <strong>Unify support channels</strong>
+                            <br />
+                            <p>Streamline your support channels - Email, Phone, Chat and more - so you can respond to
+                                all your customers from just one place</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+    <script src="main.js"></script>
+    <script src="popover.js"></script>
 </body>
 
 </html>
