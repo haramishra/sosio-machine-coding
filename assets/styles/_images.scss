@@ -1,0 +1,23 @@
+.image-container {
+  width: 620px;
+  height: 420px;
+  border-radius: 5px;
+  display: flex;
+  margin-left: 1rem;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(231, 231, 231);
+}
+
+.image {
+  align-self: center;
+}
+.image img {
+  width: 600px;
+  height: 380px;
+  background-size: cover;
+  position: relative;
+  top: 50px;
+}
+

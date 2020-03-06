@@ -1,0 +1,33 @@
+@media (max-width:  960px) {
+    .button-container{
+        display: none;
+    }
+    .tooltip {
+        display: none;
+    }
+    .dots{
+        display: none;
+    }
+    .image-container{
+        margin: 0 auto;
+        height: auto;
+        background-color: white;
+    }
+    .image{
+        display: block;
+    }
+    
+    .image img{
+        top: 0;
+        width: 100%;
+        margin-bottom: rem;
+        max-width: 90vw;
+    }
+    
+    .hide{
+        display: block;
+    }
+    .show{
+        display: none;
+    }
+}

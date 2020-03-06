@@ -1,0 +1,15 @@
+@import './assets/styles/variables'; 
+@import './assets/styles/global'; 
+@import './assets/styles/tooltip'; 
+@import './assets/styles/images'; 
+@import './assets/styles/buttons';
+
+body{
+  text-align: center;
+  font-family: Helvetica, sans-serif;
+}
+.section-wraper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
