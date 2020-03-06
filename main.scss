@@ -5,7 +5,7 @@
 @import './assets/styles/buttons';
 @import './assets/styles/dots';
 .hide{
-  display: none
+  display: none;
 }
 .show{
   display: block;
@@ -16,9 +16,6 @@
   flex-direction: row;
   justify-content: center;
   margin-top: 1rem;
-  .button-container{
-    margin-right: 2rem;
-  }
 }
 
 @import './assets/styles/media-query';
