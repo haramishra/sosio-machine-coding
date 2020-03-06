@@ -43,8 +43,3 @@ buttons.forEach((element, index) => {
   });
 });
 
-if (mediaQuery.matches) {
-  images.forEach(element => {
-    element.style.display = 'block'
-  });
-} 
